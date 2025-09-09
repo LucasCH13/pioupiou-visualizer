@@ -7,8 +7,9 @@
 
 {% block main %}
 
+<h1 class="titre">Balise pioupiou</h1>
     <section class="balise">
-    {% for balise in balise.data|slice(0, 10) %}
+    {% for balise in balise.data|slice(0, 5) %}
     {# {{dump(balise)}} #}
             <div class="carte" >
                 <div class="carte-corps">
