@@ -1,0 +1,8 @@
+.balise {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.carte {
+    border: 1px dotted;
+}

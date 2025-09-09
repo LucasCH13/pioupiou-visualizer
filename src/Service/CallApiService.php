@@ -13,10 +13,10 @@ class CallApiService
    }
 
    public function getAllData(): array {
-    return $this->getApi('all');
+    return $this->getApi('live-with-meta/all');
    }
    public function getDataLiveById(int $id): array {
-    return $this->getApi('live/' . $id);
+    return $this->getApi('live-with-meta/' . $id);
    }
 
    public function getApi(string $var) {

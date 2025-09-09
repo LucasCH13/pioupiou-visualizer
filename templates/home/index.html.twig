@@ -1,20 +1,24 @@
 {% extends 'base.html.twig' %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{asset('styles/home.css')}}">
 
+{% endblock %}
 {% block title %}Hello HomeController!{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block main %}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <section class="balise">
+    {% for balise in balise.data|slice(0, 10) %}
+    {# {{dump(balise)}} #}
+            <div class="carte" >
+                <div class="carte-corps">
+                    <p class="carte-titre">{{balise.meta.name}}</p>
+                    <p class="carte-soustitre ">{{balise.meta.description}}</p>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/dev/pioupiou-visualizer/src/Controller/HomeController.php</code></li>
-        <li>Your template at <code>C:/dev/pioupiou-visualizer/templates/home/index.html.twig</code></li>
-    </ul>
-</div>
+                        <a href="{{ path('app_balise', {'id': balise.id }) }}" class="btn" role="button" aria-pressed="true">Voir</a>
+                </div>
+            </div>
+    {% endfor %}
+    </section>
+
 {% endblock %}
