@@ -1,16 +1,50 @@
 {% extends 'base.html.twig' %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{asset('styles/balise.css')}}">
 
-{% block title %}Hello BaliseController!{% endblock %}
+{% endblock %}
+{% block title %}Balise
+{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block main %}
 
-<div class="example-wrapper">
-    <h1>Balise ✅</h1>
-    {{balise.data.meta.name}}
-    
-</div>
+
+	<h1 class="titre">{{balise.data.meta.name}}</h1>
+	<section class="vent">
+		<div class="graphique-vent">
+			<div id="wind-container">
+				<canvas id="wind-canvas" width="200" height="200"></canvas>
+				<span id="wind-text"></span>
+			</div>
+				<div class="wind-box avg">
+          <span class="label">Live</span>
+					<span class="value">{{balise.data.measurements.wind_speed_avg}}
+						km/h</span>
+				</div>
+		</div>
+    <div class="wind-box-min-max-container">
+      <div class="wind-box max">
+        <span class="label">Max</span>
+        <span class="value">{{balise.data.measurements.wind_speed_max}}
+          km/h</span>
+      </div>
+
+      <div class="wind-box min">
+        <span class="label">Min</span>
+        <span class="value">{{balise.data.measurements.wind_speed_min}}
+          km/h</span>
+      </div>
+    </div>
+	</section>
+
+	<script>
+		window.windDirIndex = {{ windDirIndex }};
+	</script>
+
+	<script src="{{ asset('js/wind-arrow.js') }}"></script>
+
+	<script>
+		const arrow = new Pioupiou.WindArrow("wind", windReports);
+arrow.draw();
+	</script>
 {% endblock %}

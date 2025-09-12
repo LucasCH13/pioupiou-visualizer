@@ -13,7 +13,7 @@ final class HomeController extends AbstractController
     public function index(CallApiService $callApiService): Response
     {
         return $this->render('home/home.html.twig', [
-            'balise' => $callApiService->getAllData()
+            'balise' => $callApiService->getAllDataLive()
         ]);
     }
 }
