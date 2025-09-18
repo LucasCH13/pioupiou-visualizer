@@ -10,7 +10,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
@@ -31,11 +30,11 @@ body {
 }
 
 .graphique-vent {
-  width: auto;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #wind-container {
@@ -55,7 +54,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap: 1rem;
+  gap: 5rem;
   background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
   padding: 1rem;
   border-radius: 12px;
@@ -105,4 +104,8 @@ body {
 
 .wind-box.min .label {
   color: #388e3c;
+}
+.graphique {
+  width: 100%;
+  height: 500px;
 }

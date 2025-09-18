@@ -19,7 +19,7 @@ class CallApiService
     return $this->getApi('live-with-meta/' . $id);
    }
    public function getDataArchivedById(int $id): array {
-    return $this->getApi('archive/' . $id . '?start=last-hour&stop=now');
+    return $this->getApi('archive/' . $id . '?start=last-day&stop=now');
    }
    public function getApi(string $var) {
     $response = $this->client->request(
