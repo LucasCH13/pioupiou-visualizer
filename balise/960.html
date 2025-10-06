@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Balise
+</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        	<link rel="stylesheet" href="../assets/styles/reset-7ckbGM5.css">
+            <link rel="stylesheet" href="../assets/styles/footer-YZgLjtd.css">
+
+        	<link rel="stylesheet" href="../assets/styles/balise-bYEO1tN.css">
+
+
+                    
+<link rel="stylesheet" href="../assets/styles/app-maoG0wF.css">
+<script type="importmap" data-turbo-track="reload">
+{
+    "imports": {
+        "app": "/assets/app-zfnvGys.js",
+        "/assets/bootstrap.js": "/assets/bootstrap-xCO4u8H.js",
+        "/assets/styles/app.css": "data:application/javascript,",
+        "@symfony/stimulus-bundle": "/assets/@symfony/stimulus-bundle/loader-V1GtHuK.js",
+        "@hotwired/stimulus": "/assets/vendor/@hotwired/stimulus/stimulus.index-S4zNcea.js",
+        "/assets/@symfony/stimulus-bundle/controllers.js": "/assets/@symfony/stimulus-bundle/controllers-FbQ0qBU.js",
+        "/assets/@symfony/ux-chartjs/controller.js": "/assets/@symfony/ux-chartjs/controller-K2Mf6fa.js",
+        "/assets/@symfony/ux-turbo/turbo_controller.js": "/assets/@symfony/ux-turbo/turbo_controller-8wQNi2p.js",
+        "/assets/controllers/hello_controller.js": "/assets/controllers/hello_controller-VYgvytJ.js",
+        "chart.js": "/assets/vendor/chart.js/chart.js.index-06TNMkm.js",
+        "@hotwired/turbo": "/assets/vendor/@hotwired/turbo/turbo.index-pT15T6h.js",
+        "/assets/controllers/csrf_protection_controller.js": "/assets/controllers/csrf_protection_controller-SVp8Dit.js"
+    }
+}
+</script><script data-turbo-track="reload">
+if (!HTMLScriptElement.supports || !HTMLScriptElement.supports('importmap')) (function () {
+    const script = document.createElement('script');
+    script.src = 'https://ga.jspm.io/npm:es-module-shims@1.10.0/dist/es-module-shims.js';
+    script.setAttribute('crossorigin', 'anonymous');
+    script.setAttribute('integrity', 'sha384-ie1x72Xck445i0j4SlNJ5W5iGeL3Dpa0zD48MZopgWsjNB/lt60SuG1iduZGNnJn');
+    script.setAttribute('data-turbo-track', 'reload');
+    document.head.appendChild(script);
+})();
+</script>
+<link rel="modulepreload" href="../assets/app-zfnvGys.js">
+<link rel="modulepreload" href="../assets/bootstrap-xCO4u8H.js">
+<link rel="modulepreload" href="../assets/@symfony/stimulus-bundle/loader-V1GtHuK.js">
+<link rel="modulepreload" href="../assets/vendor/@hotwired/stimulus/stimulus.index-S4zNcea.js">
+<link rel="modulepreload" href="../assets/@symfony/stimulus-bundle/controllers-FbQ0qBU.js">
+<link rel="modulepreload" href="../assets/@symfony/ux-chartjs/controller-K2Mf6fa.js">
+<link rel="modulepreload" href="../assets/@symfony/ux-turbo/turbo_controller-8wQNi2p.js">
+<link rel="modulepreload" href="../assets/controllers/hello_controller-VYgvytJ.js">
+<link rel="modulepreload" href="../assets/vendor/chart.js/chart.js.index-06TNMkm.js">
+<link rel="modulepreload" href="../assets/vendor/@hotwired/turbo/turbo.index-pT15T6h.js">
+<script type="module" data-turbo-track="reload">import 'app';</script>            
+            </head>
+    <body>
+                    <main>
+            
+
+	<h1 class="titre">Camurac - La Serre de Montcamp</h1>
+	<section class="vent">
+		<div class="graphique-vent">
+			<div id="wind-container">
+				<canvas id="wind-canvas" width="130" height="130"></canvas>
+				<span id="wind-text"></span>
+			</div>
+				<div class="wind-box avg">
+          <span class="label">Live</span>
+					<span class="value">3
+						km/h</span>
+				</div>
+		</div>
+    <div class="wind-box-min-max-container">
+      <div class="wind-box max">
+        <span class="label">Max</span>
+        <span class="value">8
+          km/h</span>
+      </div>
+
+      <div class="wind-box min">
+        <span class="label">Min</span>
+        <span class="value">0
+          km/h</span>
+      </div>
+    </div>
+	</section>
+	<section class="historique">
+		<canvas data-controller="symfony--ux-chartjs--chart" data-symfony--ux-chartjs--chart-view-value="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[320,324,326,338,344,344,336,332,324,326,330,328,324,326,330,330,330,336,338,322,316,308,310,318,320,314,320,316,302,306,310,308,298,298,300,298,304,302,302,310,304,298,298,302,302,302,300,300,300,300,300,304,310,302,298,298,298,298,300,300,298,298,302,298,298,302,296,294,292,290,298,300,298,296,298,296,298,300,304,298,300,302,300,300,302,296,294,292,296,296,296,298,294,294,298,298,302,298,296,302,302,302,302,304,300,296,304,300,294,284,288,286,284,288,292,296,292,286,288,282,284,284,286,288,290,292,296,298,302,302,300,296,298,300,296,296,288,280,282,280,276,272,264,258,258,264,264,268,278,278,292,302,302,300,298,298,296,292,286,282,278,272,276,278,280,284,286,290,290,288,294,298,298,302,296,292,290,290,288,284,288,284,284,284,288,286,288,284,286,286,286,290,286,288,296,302,308,308,300,290,288,276,270,270,274,278,284,276,280,278,278,284,282,282,286,286,284,280,288,276,284,290,288,292,288,280,280,280,284,286,278,276,290,312,314,312,316,326,302,304,306,302,294,276,312,288,278,292,304,296,292,312,314,316,332,304,294,304,294,318,308,308,286,304,308,302,296,308,302,306,316,298,288,312,302,300,264,334,280,328,312,268,330,0],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Vent moyen sur une journ\u00e9e enti\u00e8re en km\/h&quot;,&quot;backgroundColor&quot;:&quot;rgb(255, 99, 132)&quot;,&quot;borderColor&quot;:&quot;rgb(255, 99, 132)&quot;,&quot;data&quot;:[34,31,24,29,32,29,30,29,26,27,29,27,33,34,33,31,31,31,28,31,30,29,26,25,23,22,21,22,29,29,27,30,34,32,34,34,32,32,35,34,35,42,42,44,45,43,42,40,41,41,37,35,33,34,37,40,40,40,38,41,39,38,41,43,41,40,41,43,42,43,45,43,45,39,42,42,39,38,32,31,31,32,34,38,38,39,40,42,43,40,39,38,38,37,37,32,31,30,28,28,28,25,26,24,25,26,25,25,25,25,26,27,29,33,29,30,29,26,28,32,30,31,29,32,32,28,29,31,34,34,35,36,38,40,41,41,34,35,37,36,31,31,33,35,37,37,36,32,30,30,26,25,24,27,25,21,22,19,21,19,21,25,25,27,27,28,27,26,28,29,28,27,27,24,23,27,28,31,30,29,30,29,31,34,33,34,32,31,31,27,28,30,30,28,23,20,20,18,13,12,14,13,16,20,21,24,27,28,29,28,26,25,24,21,24,25,25,25,23,18,20,21,21,21,24,19,16,19,19,20,18,17,13,11,10,12,10,10,11,11,12,13,10,12,10,12,12,11,10,11,10,10,11,10,8,11,11,10,11,10,11,9,10,13,13,13,14,11,9,10,9,10,12,11,10,12,11,11,10,10,10,12,7,3]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false}}" class="graphique"></canvas>
+	</section>
+	<script>
+		window.windDirIndex = 0;
+	</script>
+	<script src="../assets/js/wind-arrow-HEACj70.js"></script>
+	<script>
+		const arrow = new Pioupiou.WindArrow("wind", windReports);
+		arrow.draw();
+	</script>
+            </main>
+            <footer class="disclaimer">
+                                            
+<p>
+        Données météo &copy; 
+        <a href="https://openwindmap.org" target="_blank" rel="noopener noreferrer">
+            OpenWindMap wind network
+        </a>.
+</p>                                </footer>
+                    
+      </body>
+</html>
