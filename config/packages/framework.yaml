@@ -7,7 +7,18 @@ framework:
 
     #esi: true
     #fragments: true
+    http_client:
+            scoped_clients:
+                example.client:
+                    base_uri: 'http://api.pioupiou.fr/v1/'
+                    rate_limiter: 'http_pioupiou_limiter'
 
+    rate_limiter:
+            # Don't send more than 10 requests in 5 seconds
+            http_pioupiou_limiter:
+                policy: 'token_bucket'
+                limit: 60
+                rate: { interval: '60 minutes', amount: 60 }
 when@test:
     framework:
         test: true

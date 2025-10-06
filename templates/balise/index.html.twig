@@ -13,7 +13,7 @@
 	<section class="vent">
 		<div class="graphique-vent">
 			<div id="wind-container">
-				<canvas id="wind-canvas" width="200" height="200"></canvas>
+				<canvas id="wind-canvas" width="130" height="130"></canvas>
 				<span id="wind-text"></span>
 			</div>
 				<div class="wind-box avg">
@@ -36,15 +36,15 @@
       </div>
     </div>
 	</section>
-
+	<section class="historique">
+		{{ render_chart(chart, {'class': 'graphique'}) }}
+	</section>
 	<script>
 		window.windDirIndex = {{ windDirIndex }};
 	</script>
-
 	<script src="{{ asset('js/wind-arrow.js') }}"></script>
-
 	<script>
 		const arrow = new Pioupiou.WindArrow("wind", windReports);
-arrow.draw();
+		arrow.draw();
 	</script>
 {% endblock %}

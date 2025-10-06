@@ -26,6 +26,7 @@ class CallApiService
         'GET',
         'http://api.pioupiou.fr/v1/' . $var
     );
+    
     return $response->toArray();
     
    }

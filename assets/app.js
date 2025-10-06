@@ -7,4 +7,11 @@ import './bootstrap.js';
  */
 import './styles/app.css';
 
+document.addEventListener('chartjs:init', function (event) {
+    const Chart = event.detail.Chart;
+    const Tooltip = Chart.registry.plugins.get('tooltip');
+    Tooltip.positioners.bottom = function(items) {
+        /* ... */
+    };
+});
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');

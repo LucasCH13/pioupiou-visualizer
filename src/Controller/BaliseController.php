@@ -44,7 +44,6 @@ final class BaliseController extends AbstractController
         ]);
 
         $chart->setOptions([
-          
             'maintainAspectRatio' => false, 
         
         ]);
