@@ -30,9 +30,9 @@ jobs:
         run: |
           php bin/console cache:clear --env=prod
           php bin/console asset-map:compile || true
-
-      - name: Start Symfony server
-        run: symfony server:start --no-tls --daemon --env=prod
+          
+      - name: Start PHP server
+        run: php -S 127.0.0.1:8000 -t public &
 
       - name: Wait for server to start
         run: sleep 5
